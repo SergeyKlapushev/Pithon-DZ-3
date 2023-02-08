@@ -11,7 +11,7 @@
 print('Введите кол-во цифр: ')
 x = int(input())
 c = 0
-a = []
+list = list()
 print('Введите числа в массив: ')
 for i in range(x):
     
