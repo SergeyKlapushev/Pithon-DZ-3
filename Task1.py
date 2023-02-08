@@ -15,15 +15,15 @@ list = list()
 print('Введите числа в массив: ')
 for i in range(x):
     
-    a.append(int(input()))
+    list.append(int(input()))
     
-print(a)
+print(list)
 
 print('Какое число хотите найти?')
 n = int(input())
 
 for i in range(x):
-    if n == a[i]:
+    if n == list[i]:
         c += 1
 
 print("Чисел", n, "в массиве -", c)
