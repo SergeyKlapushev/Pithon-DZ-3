@@ -23,4 +23,19 @@
 ноутбук
 Вывод: 12 '''
 
+EN_alphabet = {1:'AEIOULNSTR', 2:'DG', 3:'BCMP', 4:'FHVWY', 5:'K', 8:'JX', 10:'QZ'}
+RU_alphabet = {1:'АВЕИНОРСТ', 2:'ДКЛМПУ', 3:'БГЁЬЯ', 4:'ЙЫ', 5:'ЖЗХЦЧ', 8:'ШЭЮ', 10:'ФЩЪ'}
+print('Введите слово: ')
+word = input().upper()
+count = 0
 
+for i in word:
+    if i in 'AEIOULNSTRDGBCMPFHVWYKJXQZ':
+        for j in EN_alphabet[j]:
+            count = count + j
+    else:
+        for j in RU_alphabet:
+            if i in RU_alphabet[j]:
+                count = count + j
+
+print('Слово на', count, "очков")
